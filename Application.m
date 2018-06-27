@@ -1,16 +1,14 @@
 classdef Application < handle
-    %STARTUP Summary of this class goes here
-    %   Detailed explanation goes here
-    
-    properties
-    end
+    %APPLICATION Runs the sample application.
     
     methods        
         function startup(~)   
             % Create javaFX-application.
             jfxApplicationAdapter = JFXApplicationAdapter();
 
+            % Create stage. 
             stageController = JFXStageController(jfxApplicationAdapter, 'Hello World');
+            % Create scene.
             sceneController = SampleController('C:\Users\rudi\Documents\GitHub\BaSampleApp_matlabLib\sample.fxml');
             stageController.showScene(sceneController);
         end

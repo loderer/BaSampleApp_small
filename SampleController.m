@@ -1,9 +1,5 @@
 classdef SampleController < JFXSceneController
-    %SAMPLECONTROLLER Summary of this class goes here
-    %   Detailed explanation goes here
-    
-    properties
-    end
+    %SAMPLECONTROLLER Controller class for the sample scene.
     
     methods
         function obj = SampleController(fxml)
@@ -14,9 +10,10 @@ classdef SampleController < JFXSceneController
             eventConsumed = 0; 
             if(strcmp(e.fxId, 'btn')...
                     && strcmp(e.action, 'ACTION'))
-                 lbl = obj.getUiElement('lbl');
-                 obj.applyTask(lbl, 'setText', 'heureka');
-                 eventConsumed = 1;
+                % Handle click on btn.
+                lbl = obj.getUiElement('lbl');
+                obj.applyTask(lbl, 'setText', 'heureka');
+                eventConsumed = 1;
             end
         end
     end
