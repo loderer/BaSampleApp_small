@@ -9,7 +9,7 @@ classdef Application < handle
             % Create stage. 
             stageController = JFXStageController(jfxApplicationAdapter, 'Hello World');
             % Create scene.
-            sceneController = SampleController('C:\Users\rudi\Documents\GitHub\BaSampleApp_matlabLib\sample.fxml');
+            sceneController = SampleController(Config.pathToSampleFxml);
             stageController.showScene(sceneController);
         end
     end
