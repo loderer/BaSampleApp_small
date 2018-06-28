@@ -9,7 +9,7 @@ classdef Config
         end
         
         function ret = pathToSampleFxml
-            ret = 'C:\Users\rudi\Documents\GitHub\BaSampleApp_matlabLib\sample_app\sample.fxml'; 
+            ret = 'C:\Users\rudi\Documents\GitHub\BaSampleApp_smallSampleApplication\sample.fxml'; 
         end
     end
 end
