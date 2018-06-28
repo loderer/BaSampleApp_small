@@ -2,7 +2,7 @@
 
 % Add all MATLAB-sources to the class path. 
 addpath(genpath(...
-    'C:\Users\rudi\Documents\GitHub\BaMatlab\jfx4matlabAdapter')); 
+    'C:\Users\rudi\Documents\GitHub\BaMatlab\jfx_4_matlab_adapter')); 
 addpath(genpath(...
     'C:\Users\rudi\Documents\GitHub\BaSampleApp_matlabLib')); 
 % Add the javaFX-runtime to the static class path. 
