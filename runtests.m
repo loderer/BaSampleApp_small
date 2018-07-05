@@ -6,12 +6,5 @@ addpath(genpath('C:\Users\rudi\Documents\GitHub\BaSampleApp_small'));
 addpath(genpath('C:\Users\rudi\Documents\GitHub\BaMatlab\jfx_4_matlab'));
 %--------------------------------------------------------------------------
 
-% Create javaFX-application.
-jfxApplicationAdapter = JFXApplicationAdapter();
-
-% Create stage. 
-stageController = JFXStageController(jfxApplicationAdapter, 'Hello World');
-% Create scene
-sceneController = SampleController(...
-    'C:\Users\rudi\Documents\GitHub\BaSampleApp_small\sample.fxml');
-stageController.showScene(sceneController);
+sampleTest = SampleTest(); 
+sampleTest.run
