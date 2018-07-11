@@ -1,4 +1,4 @@
-classdef SampleController < JFXSceneController
+classdef SampleController < jfx4matlab.matlab.JFXSceneController
     %SAMPLECONTROLLER Controller class for the sample scene.
     
     properties
@@ -8,7 +8,7 @@ classdef SampleController < JFXSceneController
     
     methods
         function obj = SampleController(fxml)
-            obj = obj@JFXSceneController(fxml);
+            obj = obj@jfx4matlab.matlab.JFXSceneController(fxml);
         end
         
         function initScene(obj)
