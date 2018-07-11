@@ -7,6 +7,7 @@ classdef SampleTest < matlab.unittest.TestCase
      
     methods(TestMethodSetup)
         function start(testCase)
+            import jfx4matlab.matlab.*;
             testCase.jfxApplicationAdapter = JFXApplicationAdapter();
             stageController = JFXStageController(...
                 testCase.jfxApplicationAdapter, 'Hello World');
