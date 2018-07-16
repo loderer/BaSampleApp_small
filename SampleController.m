@@ -10,9 +10,7 @@ classdef SampleController < jfx4matlab.matlab.JFXSceneController
         function obj = SampleController(fxml)
             obj = obj@jfx4matlab.matlab.JFXSceneController(fxml);
         end
-    end
-    
-    methods (Access = {?jfx4matlab.matlab.JFXSceneController})
+        
         function initScene(obj)
             obj.lbl = obj.getUiElement('lbl');
             obj.list = obj.getUiElement('list'); 
